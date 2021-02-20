@@ -30,6 +30,7 @@
             // Put settings here that you want to apply to all profiles.
             // "useAcrylic" : true,
             // "acrylicOpacity" : 0.90,
+	    "colorScheme": "Monokai Night",
             "cursorColor" : "#657B83",
             "cursorShape": "filledBox",
             "fontFace" : "Consolas",
@@ -60,9 +61,7 @@
             },
             {
                 "name" : "git-bash", // 改个名字
-                "colorScheme" : "vscode",
                 "commandline" : "F:\\git\\Git\\bin\\bash.exe --login -i", // 改为 bash.exe，在环境变量里面配置了它之前的路径，用绝对路径也应该是可以的
-                "guid" : "{0caa0dad-35be-5f56-a8ff-afceeeaa6109}", // 改一下 guid，此处我将最后一位改为9
                 "icon" : "F:\\mantle-window-terminal\\img\\Git-Icon.png", // git-bash的logo地址
                 "suppressApplicationTitle": true,
                 "startingDirectory": "%USERPROFILE%",
@@ -194,7 +193,28 @@
         "red" : "#D8473F",
         "white" : "#EAEAEA",
         "yellow" : "#D7BA7D"
-    }
+    },
+    {
+	"name" : "Monokai Night",
+	"background" : "#1f1f1f",
+	"foreground" : "#f8f8f8",
+	"black" : "#1f1f1f",
+	"blue" : "#6699df",
+	"cyan" : "#e69f66",
+	"green" : "#a6e22e",
+	"purple" : "#ae81ff",
+	"red" : "#f92672",
+	"white" : "#f8f8f2",
+	"yellow" : "#e6db74",
+	"brightBlack" : "#75715e",
+	"brightBlue" : "#66d9ef",
+	"brightCyan" : "#e69f66",
+	"brightGreen" : "#a6e22e",
+	"brightPurple" : "#ae81ff",
+	"brightRed" : "#f92672",
+	"brightWhite" : "#f8f8f2",
+	"brightYellow" : "#e6db74"
+	}
     ],
 
     // Add custom actions and keybindings to this array.
