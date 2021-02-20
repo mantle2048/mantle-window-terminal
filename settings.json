@@ -214,27 +214,132 @@
 	"brightRed" : "#f92672",
 	"brightWhite" : "#f8f8f2",
 	"brightYellow" : "#e6db74"
+	},
+	{
+	"name": "IC_Orange_PPL",
+	"black": "#000000",
+	"red": "#c13900",
+	"green": "#a4a900",
+	"yellow": "#caaf00",
+	"blue": "#bd6d00",
+	"purple": "#fc5e00",
+	"cyan": "#f79500",
+	"white": "#ffc88a",
+	"brightBlack": "#6a4f2a",
+	"brightRed": "#ff8c68",
+	"brightGreen": "#f6ff40",
+	"brightYellow": "#ffe36e",
+	"brightBlue": "#ffbe55",
+	"brightPurple": "#fc874f",
+	"brightCyan": "#c69752",
+	"brightWhite": "#fafaff",
+	"background": "#262626",
+	"foreground": "#ffcb83"
+	},
+	{
+	"name": "Twilight",
+	"black": "#141414",
+	"red": "#c06d44",
+	"green": "#afb97a",
+	"yellow": "#c2a86c",
+	"blue": "#44474a",
+	"purple": "#b4be7c",
+	"cyan": "#778385",
+	"white": "#ffffd4",
+	"brightBlack": "#262626",
+	"brightRed": "#de7c4c",
+	"brightGreen": "#ccd88c",
+	"brightYellow": "#e2c47e",
+	"brightBlue": "#5a5e62",
+	"brightPurple": "#d0dc8e",
+	"brightCyan": "#8a989b",
+	"brightWhite": "#ffffd4",
+	"background": "#141414",
+	"foreground": "#ffffd4"
+	},
+      {
+	"name": "IC_Orange_PPL",
+	"black": "#000000",
+	"red": "#c13900",
+	"green": "#a4a900",
+	"yellow": "#caaf00",
+	"blue": "#bd6d00",
+	"purple": "#fc5e00",
+	"cyan": "#f79500",
+	"white": "#ffc88a",
+	"brightBlack": "#6a4f2a",
+	"brightRed": "#ff8c68",
+	"brightGreen": "#f6ff40",
+	"brightYellow": "#ffe36e",
+	"brightBlue": "#ffbe55",
+	"brightPurple": "#fc874f",
+	"brightCyan": "#c69752",
+	"brightWhite": "#fafaff",
+	"background": "#262626",
+	"foreground": "#ffcb83"
+	},
+	{
+	"name": "Twilight",
+	"black": "#141414",
+	"red": "#c06d44",
+	"green": "#afb97a",
+	"yellow": "#c2a86c",
+	"blue": "#44474a",
+	"purple": "#b4be7c",
+	"cyan": "#778385",
+	"white": "#ffffd4",
+	"brightBlack": "#262626",
+	"brightRed": "#de7c4c",
+	"brightGreen": "#ccd88c",
+	"brightYellow": "#e2c47e",
+	"brightBlue": "#5a5e62",
+	"brightPurple": "#d0dc8e",
+	"brightCyan": "#8a989b",
+	"brightWhite": "#ffffd4",
+	"background": "#141414",
+	"foreground": "#ffffd4"
+	},
+	{
+	"name":  "Nord",
+	"background":  "#2E3440",
+	"foreground":  "#D8DEE9",
+	"black":  "#3B4252",
+	"red":  "#BF616A",
+	"green":  "#A3BE8C",
+	"yellow":  "#EBCB8B",
+	"blue":  "#81A1C1",
+	"purple":  "#B48EAD",
+	"cyan":  "#88C0D0",
+	"white":  "#E5E9F0",
+	"brightBlack":  "#4C566A",
+	"brightRed":  "#BF616A",
+	"brightGreen":  "#A3BE8C",
+	"brightYellow":  "#EBCB8B",
+	"brightBlue":  "#81A1C1",
+	"brightPurple":  "#B48EAD",
+	"brightCyan":  "#8FBCBB",
+	"brightWhite":  "#ECEFF4"
 	}
-    ],
+],
 
-    // Add custom actions and keybindings to this array.
-    // To unbind a key combination from your defaults.json, set the command to "unbound".
-    // To learn more about actions and keybindings, visit https://aka.ms/terminal-keybindings
-    "actions":
-    [
-        // Copy and paste are bound to Ctrl+Shift+C and Ctrl+Shift+V in your defaults.json.
-        // These two lines additionally bind them to Ctrl+C and Ctrl+V.
-        // To learn more about selection, visit https://aka.ms/terminal-selection
-        { "command": {"action": "copy", "singleLine": false }, "keys": "ctrl+c" },
-        // { "command": "paste", "keys": "ctrl+v" },
+// Add custom actions and keybindings to this array.
+// To unbind a key combination from your defaults.json, set the command to "unbound".
+// To learn more about actions and keybindings, visit https://aka.ms/terminal-keybindings
+"actions":
+[
+// Copy and paste are bound to Ctrl+Shift+C and Ctrl+Shift+V in your defaults.json.
+// These two lines additionally bind them to Ctrl+C and Ctrl+V.
+// To learn more about selection, visit https://aka.ms/terminal-selection
+{ "command": {"action": "copy", "singleLine": false }, "keys": "ctrl+c" },
+// { "command": "paste", "keys": "ctrl+v" },
 
-        // Press Ctrl+Shift+F to open the search box
-        { "command": "find", "keys": "ctrl+shift+f" },
+// Press Ctrl+Shift+F to open the search box
+{ "command": "find", "keys": "ctrl+shift+f" },
 
-        // Press Alt+Shift+D to open a new pane.
-        // - "split": "auto" makes this pane open in the direction that provides the most surface area.
-        // - "splitMode": "duplicate" makes the new pane use the focused pane's profile.
-        // To learn more about panes, visit https://aka.ms/terminal-panes
-        { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "alt+shift+d" }
-    ]
+// Press Alt+Shift+D to open a new pane.
+// - "split": "auto" makes this pane open in the direction that provides the most surface area.
+// - "splitMode": "duplicate" makes the new pane use the focused pane's profile.
+// To learn more about panes, visit https://aka.ms/terminal-panes
+{ "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "alt+shift+d" }
+]
 }
