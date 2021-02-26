@@ -71,10 +71,12 @@
                 
             },
             {
-                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
                 "hidden": false,
-                "name": "Ubuntu",
-                "source": "Windows.Terminal.Wsl"
+                "name": "Ubuntu-18.04",
+                "source": "Windows.Terminal.Wsl",
+                "startingDirectory": "\\\\wsl$\\Ubuntu-18.04\\home\\yan",   
+                "backgroundImageOpacity": 0.0
             }
         ]
     },
