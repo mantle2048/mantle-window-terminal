@@ -18,7 +18,7 @@
                 "action": "copy",
                 "singleLine": false
             },
-            "keys": "ctrl+c"
+            "keys": "ctrl+shift+c"
         },
         // { "command": "paste", "keys": "ctrl+v" },
         // Press Ctrl+Shift+F to open the search box
@@ -31,7 +31,7 @@
         // - "splitMode": "duplicate" makes the new pane use the focused pane's profile.
         // To learn more about panes, visit https://aka.ms/terminal-panes
         {
-            "command":
+            "command": 
             {
                 "action": "splitPane",
                 "split": "auto",
@@ -87,6 +87,7 @@
                 "suppressApplicationTitle": true
             },
             {
+                "acrylicOpacity": 0.050000000000000003,
                 "backgroundImageOpacity": 0.55000000000000004,
                 "bellStyle": "visual",
                 "cursorShape": "filledBox",
@@ -543,6 +544,6 @@
             "yellow": "#D7BA7D"
         }
     ],
-    "startOnUserLogin": true,
+    "startOnUserLogin": false,
     "wordDelimiters": " /\\()\"'-.,:;<>~!@#$%^&*|+=[]{}~?\u2502"
 }
