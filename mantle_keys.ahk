@@ -6,8 +6,9 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 Capslock::Ctrl
 
 ; Global hotkeys
-#w::Run chrome.exe
-; #t::Run, wt.exe -F
+#w::
+    Run chrome.exe --app="https://mail.google.com/mail/"
+    return
 
 #NoEnv
 #SingleInstance force
@@ -17,7 +18,7 @@ SetWinDelay, 0
 
 #`::
     terminal := WinExist("ahk_exe WindowsTerminal.exe")
-    if (terminal) 
+    if (terminal)
     {
         active := WinActive("ahk_id " terminal)
         if (active)
@@ -30,8 +31,7 @@ SetWinDelay, 0
 Return
 
 
-^d::FolderToggleOpen("D:\OneDrive\gecco_paper")
-^f9::FolderToggleOpen("D:\OneDrive\gecco_paper")
+#o::FolderToggleOpen("D:\OneDrive")
 
 FolderToggleOpen(FolderPath) {
 	For Window In ComObjCreate("Shell.Application").Windows {
@@ -40,3 +40,18 @@ FolderToggleOpen(FolderPath) {
 	}
 	Run, % FolderPath
 }
+
+#q::
+    zotero := WinExist("ahk_exe zotero.exe")
+    if (zotero)
+    {
+        active := WinActive("ahk_id " zotero)
+        if (active)
+            WinMinimize, ahk_id %active%
+        else
+            WinActivate, ahk_id %zotero%
+    }
+    else
+        if FileExist("D:\Zotero\zotero.exe")
+            Run D:\Zotero\zotero.exe
+Return
