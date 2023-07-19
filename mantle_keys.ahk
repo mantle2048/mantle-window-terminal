@@ -6,9 +6,9 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 Capslock::Ctrl
 
 ; Global hotkeys
-#w::
-    Run chrome.exe --app="https://mail.google.com/mail/"
-    return
+; #w::
+;     Run chrome.exe --app="https://mail.google.com/mail/"
+;     return
 
 #NoEnv
 #SingleInstance force
@@ -55,3 +55,19 @@ FolderToggleOpen(FolderPath) {
         if FileExist("D:\Zotero\zotero.exe")
             Run D:\Zotero\zotero.exe
 Return
+
+#w::
+    obsidian := WinExist("ahk_exe Obsidian.exe")
+    if (obsidian)
+    {
+        active := WinActive("ahk_id " obsidian)
+        if (active)
+            WinMinimize, ahk_id %active%
+        else
+            WinActivate, ahk_id %obsidian%
+    }
+    else
+        if FileExist("C:\Users\mayan-y7000p\AppData\Local\Obsidian\Obsidian.exe")
+            Run C:\Users\mayan-y7000p\AppData\Local\Obsidian\Obsidian.exet
+Return
+
